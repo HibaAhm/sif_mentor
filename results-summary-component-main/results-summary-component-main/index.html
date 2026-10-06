@@ -46,12 +46,13 @@
     .container {
       display: flex;
       flex-direction: row;
-      width: 600px;
-      height: 400px;
       background-color: hsl(0, 0%, 100%);
       border-radius: 20px;
+      max-width: 740px;
+      width: 100%;
 
     }
+
 
 
 
@@ -208,6 +209,28 @@
       width: 80%;
       color: hsl(241, 100%, 89%, 0.8);
       font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        max-width: 400px;
+
+      }
+
+      .results-summary {
+        width: 100%;
+        border-radius: 0 0 20px 20px
+      }
+
+      .summary {
+        width: 100%;
+
+      }
+
+      body {
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
